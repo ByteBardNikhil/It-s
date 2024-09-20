@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Her</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container-header"></div>
+    <div class="container" id="birthdayContainer">
+      <div class="card">
+        <h1>
+          <p>Happy Birthday</p>
+          <p id="animatedText"><em></em></p>
+
+          <br /><br />
+          <p>Wishing you an amazing day filled with fun and laughter.</p>
+          <br /><br />
+          <p>Cheers, Nikhil Mahajan</p>
+        </h1>
+      </div>
+    </div>
+
+    <div class="btn-container">Thank You Nikhil ❤️</div>
+    <div class="bubble"></div>
+    <div class="bubble" style="float: right"></div>
+
+    <script>
+      const text = "McKinley Marie John!";
+      const element = document.getElementById("animatedText");
+      let i = 0;
+
+      function showLetter() {
+        if (i < text.length) {
+          element.innerHTML += text[i]; // Add the current letter
+          i++;
+          setTimeout(showLetter, 100); // Adjust the timeout for letter display
+        }
+      }
+
+      // Execute after 2 seconds of page load
+      window.onload = function () {
+        setTimeout(showLetter, 2000); // Delay the start of showLetter by 2 seconds
+      };
+    </script>
+  </body>
+</html>
