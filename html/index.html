@@ -8,29 +8,42 @@
   </head>
   <body>
     <section>
-      <div class="container-header"></div>
-      <div class="container" id="birthdayContainer">
-        <div class="card">
-          <h1>
-            <p>Happy Birthday</p>
-            <p id="animatedText"><em></em></p>
+      <div class="container-header">
+        <div class="container" id="birthdayContainer">
+          <div class="card">
+            <h1>
+              <p>Happy Birthday ❤️🎉</p>
+              <p id="animatedText"><em></em></p>
 
-            <br /><br />
-            <p>Wishing you an amazing day filled with fun and laughter.</p>
-            <br /><br />
-            <p>Cheers, Nikhil Mahajan</p>
-          </h1>
+              <br /><br />
+              <p>
+                Wishing you an amazing day filled with fun and laughter.❤️🎈✨
+              </p>
+              <br /><br />
+              <p>Cheers, Nikhil Mahajan ❤️🥳</p>
+            </h1>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <a href="#banner" class="btn-container">Thank You Nikhil ❤️</a>
+        <div>
+          <a
+            href="#banner"
+            class="btn-container"
+            onclick="scrollToSection('banner')"
+            >Thank You Nikhil ❤️</a
+          >
+        </div>
+        <div class="bubble"></div>
       </div>
-      <div class="bubble"></div>
     </section>
-    <section id="banner"></section>
+    <section>
+      <div id="banner" class="banner">
+        <img src="../media/HeartHold.avif" alt="heartHold" />
+        <p>This hear is Mine</p>
+      </div>
+    </section>
     <script>
-      const text = "McKinley Marie John!";
+      const text = "McKinley Marie John! ❤️🎂";
       const element = document.getElementById("animatedText");
       let i = 0;
 
@@ -38,14 +51,19 @@
         if (i < text.length) {
           element.innerHTML += text[i]; // Add the current letter
           i++;
-          setTimeout(showLetter, 100); // Adjust the timeout for letter display
+          setTimeout(showLetter, 300); // Adjust the timeout for letter display
         }
       }
 
       // Execute after 2 seconds of page load
       window.onload = function () {
-        setTimeout(showLetter, 2000); // Delay the start of showLetter by 2 seconds
+        setTimeout(showLetter, 4000); // Delay the start of showLetter by 2 seconds
       };
+      function scrollToSection(sectionId) {
+        const targetElement = document.getElementById(sectionId);
+
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     </script>
   </body>
 </html>
