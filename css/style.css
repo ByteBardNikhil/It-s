@@ -122,7 +122,7 @@ body {
 }
 footer {
   text-align: center;
-  margin-top: 20rem;
+  margin-top: 0rem;
 }
 footer p {
   font-size: 1.5rem;
@@ -201,4 +201,7 @@ p {
 }
 .content {
   font-size: 1rem;
+}
+.closing {
+  margin-top: 4rem;
 }
