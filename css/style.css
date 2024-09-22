@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
 body {
   background-image: linear-gradient(
     to right top,
@@ -11,6 +13,7 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Chewy", cursive;
 }
 
 .card {
@@ -40,20 +43,29 @@ body {
 .strikethrough {
   text-decoration: line-through;
 }
+
 .card .text-container #head {
-  font-family: "Nobile", sans-serif;
   font-size: 1.5em;
-  margin: 60px auto 60px auto;
+  margin: 60px auto 0px auto;
 }
+.name {
+  font-size: 1.5rem !important;
+  padding: 0px !important;
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+
 .card p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.4;
-  font-family: "Nobile";
+
   color: #331717;
-  font-style: italic;
+
   text-align: center;
-  margin: 30px auto 0px auto;
+  margin: 20px auto 0px auto;
+  margin-bottom: 0px;
 }
+
 .card .front {
   position: absolute;
   width: 100%;
@@ -73,6 +85,9 @@ body {
 .card:hover .front {
   transform: perspective(800px) rotateY(-170deg);
   background-color: #41718d;
+}
+.emoji {
+  font-size: 5rem !important;
 }
 .card:hover .back {
   transform: perspective(800px) rotateY(-170deg);

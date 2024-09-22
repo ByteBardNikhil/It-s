@@ -18,12 +18,14 @@
         </div>
       </div>
       <div class="text-container">
-        <p id="head">Happy Birthday அத்தான்!</p>
-        <p>
-          I hope your special day will bring you lots of happiness, love, and
-          fun. You deserve them a lot. Enjoy!
+        <p id="head">
+          🎉 Happy <span class="birth">Birthday</span>,<br />
+         <p class="name"> Mckinley Marie John! 🎂💖</p>
         </p>
-        <p>Hope your day goes great!</p>
+        <p>
+        💗 I love you more than words can express.
+        </p>
+        <p>I can't wait to give you the biggest, sweetest birthday kiss 😚 </p>
       </div>
     </div>
     <div class="card">
@@ -37,15 +39,14 @@
         </div>
       </div>
       <div class="text-container">
-        <p id="head">Happy Birthday அத்தான்!</p>
+        <p >I wanted to send you something special but the postman told me to get out of the mailbox 😞 </p>
         <p>
-          I hope your special day will bring you lots of happiness, love, and
-          fun. You deserve them a lot. Enjoy!
+     But be warned: I might need a bigger box for all the love I’m bringing! 📦❤️
         </p>
-        <p>Hope your day goes great!</p>
+        <p>And just like that, I guess you’ll have to settle for my charming company instead of a boring package! 😉✨</p>
       </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="myFunction()">
       <div class="back"></div>
       <div class="front">
         <div class="imgset">
@@ -56,13 +57,27 @@
         </div>
       </div>
       <div class="text-container">
-        <p id="head">Happy Birthday அத்தான்!</p>
-        <p>
-          I hope your special day will bring you lots of happiness, love, and
-          fun. You deserve them a lot. Enjoy!
-        </p>
-        <p>Hope your day goes great!</p>
+        <p id="head">Have you noticed that in the first card there was no 'D' in birthday?🤔</p>
+        <p class="emoji">🍆</p>
+        <p> Because I’ll give you the D later! 😉🎉</p>
       </div>
     </div>
+    <footer>
+      <p>&copy;by Nikhil Mahajan</p>
+    </footer>
+
+    <script>
+ function myFunction() {
+            const ele = document.getElementsByClassName('birth');
+            
+            // Check if there is at least one element with the class 'birth'
+            if (ele.length > 0) {
+                ele[0].textContent = 'Birth_ay'; // Replace text
+            } else {
+                console.log("No elements found with class 'birth'.");
+            }
+        }
+</script>
   </body>
+
 </html>
