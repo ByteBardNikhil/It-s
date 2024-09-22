@@ -7,63 +7,62 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <section>
-      <div class="container-header">
-        <div class="container" id="birthdayContainer">
-          <div class="card">
-            <h1>
-              <p>Happy Birthday ❤️🎉</p>
-              <p id="animatedText"><em></em></p>
-
-              <br /><br />
-              <p>
-                Wishing you an amazing day filled with fun and laughter.❤️🎈✨
-              </p>
-              <br /><br />
-              <p>Cheers, Nikhil Mahajan ❤️🥳</p>
-            </h1>
-          </div>
+    <div class="card">
+      <div class="back"></div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
+          />
         </div>
-
-        <div>
-          <a
-            href="#banner"
-            class="btn-container"
-            onclick="scrollToSection('banner')"
-            >Thank You Nikhil ❤️</a
-          >
+      </div>
+      <div class="text-container">
+        <p id="head">Happy Birthday அத்தான்!</p>
+        <p>
+          I hope your special day will bring you lots of happiness, love, and
+          fun. You deserve them a lot. Enjoy!
+        </p>
+        <p>Hope your day goes great!</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="back"></div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
+          />
         </div>
-        <div class="bubble"></div>
       </div>
-    </section>
-    <section>
-      <div id="banner" class="banner">
-        <img src="../media/HeartHold.avif" alt="heartHold" />
-        <p>This hear is Mine</p>
+      <div class="text-container">
+        <p id="head">Happy Birthday அத்தான்!</p>
+        <p>
+          I hope your special day will bring you lots of happiness, love, and
+          fun. You deserve them a lot. Enjoy!
+        </p>
+        <p>Hope your day goes great!</p>
       </div>
-    </section>
-    <script>
-      const text = "McKinley Marie John! ❤️🎂";
-      const element = document.getElementById("animatedText");
-      let i = 0;
-
-      function showLetter() {
-        if (i < text.length) {
-          element.innerHTML += text[i]; // Add the current letter
-          i++;
-          setTimeout(showLetter, 300); // Adjust the timeout for letter display
-        }
-      }
-
-      // Execute after 2 seconds of page load
-      window.onload = function () {
-        setTimeout(showLetter, 4000); // Delay the start of showLetter by 2 seconds
-      };
-      function scrollToSection(sectionId) {
-        const targetElement = document.getElementById(sectionId);
-
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      }
-    </script>
+    </div>
+    <div class="card">
+      <div class="back"></div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
+          />
+        </div>
+      </div>
+      <div class="text-container">
+        <p id="head">Happy Birthday அத்தான்!</p>
+        <p>
+          I hope your special day will bring you lots of happiness, love, and
+          fun. You deserve them a lot. Enjoy!
+        </p>
+        <p>Hope your day goes great!</p>
+      </div>
+    </div>
   </body>
 </html>
