@@ -125,13 +125,13 @@ footer {
   margin-top: 20rem;
 }
 footer p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   letter-spacing: 0.2rem;
 }
 
 /* section css starts  */
-.container {
+.container-letter {
   display: inline;
   color: wheat;
   display: flex;
@@ -161,4 +161,44 @@ p {
 }
 .emoji {
   font-size: 24px;
+}
+
+/* timeline css starts  */
+.timeline-section {
+  margin-top: 10rem;
+  text-align: center;
+}
+.timeline {
+  position: relative;
+  width: 100%;
+
+  margin: auto;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Center the line */
+  top: 0;
+  width: 4px; /* Width of the vertical line */
+  height: 100%; /* Full height of the timeline */
+  background-color: #2196f3; /* Line color */
+  transform: translateX(-50%); /* Centering adjustment */
+}
+.container {
+  position: inherit;
+  width: 50%;
+}
+.timeline-section .heading {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.content {
+  font-size: 1rem;
 }
