@@ -262,6 +262,49 @@
       <h1>I love you</h1>
     </section>
 
+    <section class="gallery-section">
+      <h2>A Sneak Peek at My Photo Collection 📸👀</h2>
+      <div class="slider">
+        <div class="slide active">
+          <img src="../media/img1.jpeg" alt="Image 1" />
+          <p>Some text to write for Image 1</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img2.png" alt="Image 2" />
+          <p>Some text to write for Image 2</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img3.png" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img4.jpeg" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img5.jpeg" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img6.jpeg" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img7.jpeg" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img8.jpeg" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <div class="slide">
+          <img src="../media/img1.jpeg" alt="Image 3" />
+          <p>Some text to write for Image 3</p>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </section>
     <!-- Footer section  -->
     <footer>
       <p>
@@ -280,6 +323,32 @@
           console.log("No elements found with class 'birth'.");
         }
       }
+
+      const slides = document.querySelectorAll(".slide");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length; // Loop back to start
+        showSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop back to end
+        showSlide(currentIndex);
+      }
+
+      // Event listeners for buttons
+      document.querySelector(".next").addEventListener("click", nextSlide);
+      document.querySelector(".prev").addEventListener("click", prevSlide);
+
+      // Initialize by showing the first slide
+      showSlide(currentIndex);
     </script>
   </body>
 </html>
