@@ -120,3 +120,45 @@ body {
   box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
   border-radius: 5px;
 }
+footer {
+  text-align: center;
+  margin-top: 20rem;
+}
+footer p {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+/* section css starts  */
+.container {
+  display: inline;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin-top: 10rem;
+  letter-spacing: 2px;
+}
+.card-For-Her {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+.highlight {
+  color: wheat;
+  font-weight: bold;
+}
+.emoji {
+  font-size: 24px;
+}

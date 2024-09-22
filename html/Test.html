@@ -3,93 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cute 3D Hearts Animation</title>
+    <title>About My Love</title>
     <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-        background-color: #f0e0d8; /* Light background for contrast */
+      .container {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
       }
-
-      .bg-heart {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      .card-For-Her {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        text-align: center;
       }
-
-      .heart {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        transform: rotate(-45deg);
-        animation: move 3s infinite ease-in-out;
+      h1 {
+        color: #ff6b6b;
       }
-
-      .heart::before,
-      .heart::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50%;
+      p {
+        line-height: 1.6;
       }
-
-      .heart::before {
-        top: -25px; /* Adjust to position the top half of the heart */
-        left: 0;
+      .highlight {
+        color: #007bff;
+        font-weight: bold;
       }
-
-      .heart::after {
-        left: 25px; /* Adjust to position the right half of the heart */
-      }
-
-      @keyframes move {
-        0% {
-          transform: translateY(100vh) rotate(-45deg);
-          opacity: 1;
-        }
-        50% {
-          opacity: 1; /* Heart is fully visible */
-          transform: translateY(-50vh) rotate(-45deg);
-        }
-        100% {
-          transform: translateY(-100vh) rotate(-45deg);
-          opacity: 0; /* Heart fades out */
-        }
-      }
-
-      /* Different animation durations for each heart */
-      .heart:nth-child(1) {
-        left: 10%;
-        animation-duration: 2s; /* Different interval */
-      }
-
-      .heart:nth-child(2) {
-        left: 40%;
-        animation-duration: 3s; /* Different interval */
-      }
-
-      .heart:nth-child(3) {
-        left: 70%;
-        animation-duration: 4s; /* Different interval */
-      }
-
-      .heart:nth-child(4) {
-        left: 30%;
-        animation-duration: 5s; /* Different interval */
+      .emoji {
+        font-size: 24px;
       }
     </style>
   </head>
   <body>
-    <div class="bg-heart">
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
+    <div class="container">
+      <div class="card-For-Her">
+        <h1>Hello My Love 💖</h1>
+        <p>
+          I respect you, but I want to tell you that yes, you're
+          <span class="highlight">damn cute</span>! Whenever I meet you, my
+          heart skips a beat.
+        </p>
+
+        <p>
+          You are only open with me, and I love you to an extent that the world
+          cannot comprehend. Sometimes, you don’t treat me as I expect, but I
+          believe in your potential to improve in that manner. 🌟
+        </p>
+
+        <p>
+          I know you have issues with your mood, but whatever mood I'm in when I
+          talk to you, my mood changes just by looking at you. You are my
+          motivation, my future, my present! 💪
+        </p>
+
+        <p>
+          You listen to me and provide solutions to my problems; however, when I
+          offer solutions to yours, you don’t always like them. 😅 You tend to
+          disobey me at times, which I don’t appreciate.
+        </p>
+
+        <p>
+          But despite everything, I love you more than words can express! 🌍 You
+          are bold enough to watch movies alone and cherish your mom deeply. 💕
+          Just remember, when you're hungry, no one can get through to you! 🍕
+        </p>
+
+        <p>
+          I only want you to be happy, and I hope to be there to see you smile
+          whenever you're happy! 😊
+        </p>
+
+        <h2>Happy Birthday! 🎉</h2>
+      </div>
     </div>
   </body>
 </html>
